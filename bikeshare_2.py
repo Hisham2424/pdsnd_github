@@ -198,6 +198,10 @@ def raw_data(df):
 
 def NaN_finder(df):
     
+    """""
+    This function counts NaN values upon user's approval
+    """
+    
     print('Would like to know the number of NaN in this DataFrame?')
     response = input()
     
