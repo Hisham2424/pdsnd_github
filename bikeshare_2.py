@@ -212,6 +212,9 @@ def NaN_finder(df):
 
 def NaN_replacer(df):
     
+    """""
+    This function replaces NaN values with 0 upon user's approval
+    """
     print('Would you like to replace NaN values with 0?\n')
     response = input().lower()
     x = 0
