@@ -15,3 +15,5 @@ Three csv files and bikeshare.py
 ### Credits
 Credtis to Udacity Python for Data Science Nanodegree
 
+### Additional comments
+Version control enhances collaborative projects greatly. I hope to apply this skill in my professional career
