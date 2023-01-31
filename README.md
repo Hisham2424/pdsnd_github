@@ -7,11 +7,11 @@
 Version Control Project - Udacity Nanodegree
 
 ### Description
-Describe what your project is about and what it does
+This project is to share a Bikeshare project in Github using Git
 
 ### Files used
-Include the files used
+Three csv files and bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Credtis to Udacity Python for Data Science Nanodegree
 
