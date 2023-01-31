@@ -186,8 +186,8 @@ def raw_data(df):
     This function display raw data upon user's request
     """
 
-    print(' Would you like to to see the 5 rows of raw data ')
-    response = input()
+    print(' Would you like to to see the 5 rows of raw data? ')
+    response = input().lower()
     x = 0
     
     while response == 'yes':
@@ -202,12 +202,23 @@ def NaN_finder(df):
     This function counts NaN values upon user's approval
     """
     
-    print('Would like to know the number of NaN in this DataFrame?')
-    response = input()
+    print('Would like to know the number of NaN in this DataFrame?\n')
+    response = input().lower()
+    x = 0
     
     while response == 'yes':
         x = df.isnull().sum().sum()
         print('The number of NaN values in our DataFrame is:', x)
+
+def NaN_replacer(df):
+    
+    print('Would you like to replace NaN values with 0?\n')
+    response = input().lower()
+    x = 0
+    
+    while response == 'yes':
+        x = df.fillna(0)
+        print('All NaN have been replaced with 0')
  
         
 
@@ -222,6 +233,7 @@ def main():
         user_stats(df)
         raw_data(df)
         NaN_finder(df)
+        NaN_replacer(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
