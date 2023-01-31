@@ -195,6 +195,16 @@ def raw_data(df):
         x += 5
         print('Do you want 5 more?')
         response = input()
+
+def NaN_finder(df):
+    
+    print('Would like to know the number of NaN in this DataFrame?')
+    response = input()
+    
+    while response == 'yes':
+        x = df.isnull().sum().sum()
+        print('The number of NaN values in our DataFrame is:', x)
+ 
         
 
 def main():
@@ -207,6 +217,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         raw_data(df)
+        NaN_finder(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
